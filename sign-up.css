@@ -62,6 +62,12 @@ form .input-box span.details{
   border-bottom-width: 2px;
   transition: all 0.3s ease;
 }
+
+form .signin-link{
+  color: #262626;
+  margin-top: 20px;
+  text-align: center;
+}  
 .user-details .input-box input:focus,
 .user-details .input-box input:valid{
   border-color: #321e8a;
@@ -120,6 +126,7 @@ form .input-box span.details{
  form .button input:hover{  
     background: linear-gradient(135deg, #eb4d4d, #321e8a);
   }
+
  @media(max-width: 584px){
  .container{
   max-width: 100%;

@@ -83,6 +83,11 @@ html, body{
 .container form .button{
   margin: 40px 0 20px 0;
 }
+.container form .signup-link{
+    color: #262626;
+    margin-top: 20px;
+    text-align: center;
+}   
 .container .input-box input[type="submit"]{
   background: linear-gradient(to right, #71b7e6 0%, #9b59b6 100%);
   font-size: 17px;
@@ -96,6 +101,7 @@ html, body{
   background: linear-gradient(to left, #eb4d4d 0% , #321e8a 100%);
 }
 .container .option{
+  margin-top: 15px;
   font-size: 14px;
   text-align: center;
 }
@@ -134,8 +140,4 @@ html, body{
   background: linear-gradient( to left,  #3b5998 0%, #476bb8 100%);
   margin: 20px 0 50px 0;
 }
-.conatiner .signup-link{    
-  color: #262626;
-  margin-top: 20px;
-  text-align: center;
-}
+
