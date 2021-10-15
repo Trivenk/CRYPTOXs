@@ -11,7 +11,7 @@ html, body{
   height: 100vh;
   width: 100%;
   place-items: center;
-  background: linear-gradient(to right, #99004d 0%, #ff0080 100%);
+  background: linear-gradient(to right, #eb4d4d, #321e8a 100%);
 }
 ::selection{
   background: #ff80bf;
@@ -129,7 +129,7 @@ html, body{
   margin: 20px 0 15px 0;
 }
 .container .twitter a:hover{
-  background: linear-gradient(to left,  #00acee 0%, #1abeff 100%);
+  background: linear-gradient(to left,  #08678d 0%, #1590c0 100%);
   margin: 20px 0 15px 0;
 }
 .container .facebook a{
@@ -137,7 +137,7 @@ html, body{
   margin: 20px 0 50px 0;
 }
 .container .facebook a:hover{
-  background: linear-gradient( to left,  #3b5998 0%, #476bb8 100%);
+  background: linear-gradient( to left,  #3464ca 0%, #0e2e74 100%);
   margin: 20px 0 50px 0;
 }
 
