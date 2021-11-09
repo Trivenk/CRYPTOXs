@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRYPTOXs</title>
+    <link rel="stylesheet" href="front.css">    
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+</head>
+<body>
+  <div id="na">
+    <div class="container">
+    <div class="header">
+        <ul>
+            <li><a href ="#"><span id="large">CRYPTOXs</span></a></li>
+            <li><a href ="#">Features</a></li>
+            <li><a href="#">Prices</a></li>
+            <li><a href="#">Learn</a></li>
+            <li><a href="#">Support</a></li>
+            <li><a href="#">Futures</a></li>
+            <div class="search">
+                <input type="text" name="search" id="search" placeholder="Sign In" onclick="window.location.href='sign-in.html'">
+                <input type="text" name="text" id="text" placeholder="Sign Up" onclick="window.location.href='sign-up.html', innerHeight=70">
+                </div>
+                
+
+        </ul>
+    </div>
+    </div>
+        <footer>
+            <div class="top-footer">
+                <div class="features">
+                <span class ="feat">Features</span>
+                <ul>
+                   <li><a href="#">24/7 Support</a></li>
+                   <li><a href="#">Account Management</a></li>
+                   <li><a href="#">Futures</a></li>
+                   <li><a href="#">Support</a></li> 
+                </ul>
+                </div>
+                <div class="features">
+                <span class="feat">Prices</span>
+                <ul>
+                    <li><a href="#">Cryptowatch</a></li>
+                    <li><a href="#">Prices Overview</a> </li>
+                </ul>
+                </div>
+                <div class="features">
+                    <span class="feat">Learn</span>
+                    <ul>
+                        <li><a href ="#">Blog</a></li>
+                        <li><a href="#">Crypto Guides</a> </li>
+                        <li><a href="#">Videos</a></li>
+                        <li><a href="#">Podcast</a></li>
+                    </ul>
+                </div>
+                <div class="features">
+                    <span class="feat">About</span>
+                    <ul>
+                        <li><a href="#">Why CRYPTOXs?</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Contacts</a></li>
+                        <li><a href="#">Affilates</a></li>
+                    </ul>
+                </div>
+                </div>
+            <hr> <br>
+            <div class="footer">
+            <h2>CRYPTOXs</h2>
+            <div class="social">
+            <a href="http://www.linkedin.com"><i class="fa fa-linkedin"></i></a>
+            <a href="http://www.twitter.com"><i class="fa fa-twitter"></i></a>
+            <a href="http://www.facebook.com"><i class="fa fa-facebook"></i></a>
+            </div>
+            <div class="policy">
+                <p style="color: rgb(234, 231, 248)">© 2021-2024 Payward, Inc</p>
+                <a href="#Policy_Notice"><u>Privacy Notice</u></a><br>
+            </div> 
+            <div class="cookies">
+                <a href="#Terms"><u>Terms of Services</u></a><br>
+                <a href="#cookies"><u>Cookies policy</u></a><br>
+            </div>
+        </div>
+        </footer>
+      </div>
+
+        <div class="contain" id="pop">
+          <button class="title1" on>+</button>
+            <div class="title">Registration</div>
+            
+            <div class="content">
+              <form action="Welcome.html">
+                <div class="user-details">
+                  <div class="input-box">
+                    <span class="details">Full Name</span>
+                    <input type="text" placeholder="Enter your name" required>
+                  </div>
+                  <div class="input-box">
+                    <span class="details">Username</span>
+                    <input type="text" placeholder="Enter your username" required>
+                  </div>
+                  <div class="input-box">
+                    <span class="details">Email</span>
+                    <input type="email" placeholder="Enter your email" required>
+                  </div>
+                  <div class="input-box">
+                    <span class="details">Phone Number</span>
+                    <input type="text" placeholder="Enter your number" required>
+                  </div>
+                  <div class="input-box">
+                    <span class="details">Password</span>
+                    <input type="password" id="pass" placeholder="Enter your password" required>
+                  </div>
+                  <div class="input-box">
+                    <span class="details">Confirm Password</span>
+                    <input type="password" placeholder="Re-enter your password" required>
+                  </div>
+                  <div>
+                  <input type ="checkbox" name="chk" onclick="showpwd()"/> Show Password
+                  </div>
+                </div>
+                <div class="gender-details">
+                  <input type="radio" name="gender" id="dot-1">
+                  <input type="radio" name="gender" id="dot-2">
+                  <input type="radio" name="gender" id="dot-3">
+                  <span class="gender-title">Gender</span>
+                  <div class="category">
+                    <label for="dot-1">
+                    <span class="dot one"></span>
+                    <span class="gender">Male</span>
+                  </label>
+                  <label for="dot-2">
+                    <span class="dot two"></span>
+                    <span class="gender">Female</span>
+                  </label>
+                  <label for="dot-3">
+                    <span class="dot three"></span>
+                    <span class="gender">Other</span>
+                    </label>
+                  </div>
+                </div>
+                <div class="button">
+                  <input type="submit" value="Register">
+                </div>
+                <div class="button">
+                    <input type="reset" value="Reset">
+                </div>
+                <div class="signin-link">Already have an account <a href="./sign-in.html">Signin now</a>
+                </div></div>
+              </form>
+              <script>
+                function showpwd(){
+                   var x= document.getElementById("pass");
+                   if(x.type==="password"){
+                       x.type = "text";
+                   }
+                   else{
+                       x.type = "password"
+                   }
+               }
+               
+           </script>
+            </div>
+          </div>
+
+
+        <script>
+            const contain = document.querySelector('.contain');
+            window.onload = function(){
+                setTimeout(function(){
+                  document.getElementById("na").style.opacity = "0.4"
+                  contain.style.display = "block"
+                }, 4000)
+            
+
+                title1.onclick = function() {
+                  document.getElementById("na").style.opacity = "1"
+                  contain.style.display = "none";
+                }
+              }
+
+        </script>
+</body>
+</html>
