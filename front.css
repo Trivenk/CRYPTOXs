@@ -1,0 +1,158 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.header {
+background-color: #5741d9;
+width: 100%;
+height: 90px;
+color: white;
+
+}
+#large{
+  font-size: 25px;
+  font-weight: bold;
+}
+.header ul{
+  height: 100%;
+  width: 100%;
+  display: inline-flex;
+  justify-content: left ;
+  align-items: center;
+  /* border: 2px solid red; */
+  /* margin: 0 auto; */
+  color: white;
+}
+.header ul li{
+  padding: 10px;
+  list-style: none;
+  margin-left: 10px;
+  margin-right: 10px;
+  /* height: 10?0%; */
+}
+
+.header ul li a{
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 15px;
+  /* height: 100%; */
+}
+.header ul li a:hover{
+  background-color: white;
+  color: black;
+}
+
+.search {
+  position:absolute;
+  right:0;
+  color:white;
+}
+.search input{
+  background-color: white;
+}
+
+::placeholder{
+    color:white;
+}
+
+.container input{
+  border:2px solid white;
+  background-color: #5741d9;
+  border-radius:22px;
+  width : 18%;
+  align-items: center;
+  justify-content: center;
+  padding:3px 17px;
+  /* margin:34px;   */
+  /* padding-left: 25px; */
+}
+.search{
+  position: absolute;
+  right:0;
+}
+
+.social a:hover{
+background-color: salmon;
+padding: 5px ;
+border-radius: 10px;
+}
+
+.feat{
+  font-size: 25px;
+  font-weight: bold;
+  /* margin-bottom: 20px; */
+  color:rgb(154, 154, 160);
+  
+}
+.features{
+  margin-right: 60px;
+}
+.top-footer{
+display: flex;
+padding-bottom: 50px;
+padding-left: 220px;
+font-size: 15px;
+color: rgb(234, 231, 248);
+font-weight: bold;
+}
+
+.top-footer ul{
+margin-top: 15px;
+}
+.top-footer ul li{
+padding:4px;
+list-style:none;
+
+}
+.features ul li a{
+color:aliceblue;
+text-decoration: none;
+transition: .3s;
+}
+.features ul li a:hover{
+color:  lightgray;
+font-size: 17px;
+}
+footer{
+  text-align: left;
+  padding: 30px;
+  background-color: #5741d9;
+  color: white;
+  padding-left: 120px;
+  position: absolute;
+  bottom:0;
+  margin: auto;
+  width:100%;
+
+}
+.footer{
+  display: flex;
+}
+.footer h2{
+  margin-right: 80px;
+}
+.footer a{
+  padding:20px;
+  font-size: 32px;
+  color:azure
+}
+.policy{
+  padding-left: 60px;
+  font-size: 12px;
+}
+
+.policy a{
+  padding-left: 20px;
+  font-size: 13px;
+  color: rgb(234, 231, 248);
+}
+
+.cookies a{
+  padding-left: 40px;
+  font-size: 12px;
+  color:rgb(234, 231, 248);
+}
