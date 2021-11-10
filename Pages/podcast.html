@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+    .banner {
+        height: 300px;
+        width: 100%;
+        background-color: #5741d9;
+        background-repeat: no-repeat;
+        color: white;
+        display: flex;
+        /* justify-content: center; */
+        align-items: center;
+    }
+    .bannertext{
+        height: 150px;
+        width: 50%;
+        vertical-align: baseline;
+        padding-right: 80px;
+        padding-left: 80px;
+        font: inherit;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        /* border:2px solid black */
+    }
+    .text1{
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .text2{
+        margin-top: 0%;
+        font-size: 30px;
+        margin-bottom: 0%;
+    }
+    .text3{
+        margin-top: 0%;
+        font-size: 25px;
+        line-height: 1.16;
+        text-align: left;
+    }
+    strong{
+        font-family: Arial, Helvetica, sans-serif;
+        color: #5741d9;
+        font-weight: 700;
+        font-size: 28px;
+    }
+    .banner2{
+        width: 100%;
+        background-color: white;
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: black;
+        margin: 20px;
+        margin-left: 0px;
+        font: inherit;
+    }
+    .para{
+        font-family: 'Celias';
+        margin: 20px;
+    }
+    .link{
+        text-decoration: none;
+        list-style: none;
+        margin: auto;
+        padding: 0px;
+        width: 100%;
+        margin-left: 20px;
+    }
+    .lis{
+        width: 24.4%;
+        margin: 0px !important;
+        padding: 0px !important;
+        display: flex;
+        flex-direction: column;
+    }
+    li a{
+        text-decoration: none;
+        color: #5741d9;
+        margin-bottom: 30px;
+        font-family: 'Celias';
+        font-weight: 800;
+        line-height: 21px;
+        padding: 5px;
+    }
+    span{
+        font-family: 'Celias';
+    }
+
+    .butt{
+        margin: 30px;
+        width: 130px;
+        height: 40px;
+        color: #fff;
+        border-radius: 5px;
+        padding: 10px 25px;
+        font-family: 'Lato', sans-serif;
+        font-weight: 500;
+        background: transparent;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        position: relative;
+        display: inline-block;
+        box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+        7px 7px 20px 0px rgba(0,0,0,.1),
+        4px 4px 5px 0px rgba(0,0,0,.1);
+        outline: none;
+    }
+    .btn-12{
+        position: relative;
+        right: 20px;
+        bottom: 20px;
+        border:none;
+        box-shadow: none;
+        width: 130px;
+        height: 40px;
+        line-height: 42px;
+        -webkit-perspective: 230px;
+        perspective: 230px;
+        }
+        .btn-12 span {
+        background: rgb(0,172,238);
+        background: linear-gradient(0deg, rgba(0,172,238,1) 0%, rgba(2,126,251,1) 100%);
+        display: block;
+        position: absolute;
+        width: 130px;
+        height: 40px;
+        box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+        7px 7px 20px 0px rgba(0,0,0,.1),
+        4px 4px 5px 0px rgba(0,0,0,.1);
+        border-radius: 5px;
+        margin:0;
+        text-align: center;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        -webkit-transition: all .3s;
+        transition: all .3s;
+    }
+    .btn-12 span:nth-child(1) {
+        box-shadow:
+        -7px -7px 20px 0px #fff9,
+        -4px -4px 5px 0px #fff9,
+        7px 7px 20px 0px #0002,
+        4px 4px 5px 0px #0001;
+        -webkit-transform: rotateX(90deg);
+        -moz-transform: rotateX(90deg);
+        transform: rotateX(90deg);
+        -webkit-transform-origin: 50% 50% -20px;
+        -moz-transform-origin: 50% 50% -20px;
+        transform-origin: 50% 50% -20px;
+    }
+    .btn-12 span:nth-child(2) {
+        -webkit-transform: rotateX(0deg);
+        -moz-transform: rotateX(0deg);
+        transform: rotateX(0deg);
+        -webkit-transform-origin: 50% 50% -20px;
+        -moz-transform-origin: 50% 50% -20px;
+        transform-origin: 50% 50% -20px;
+    }
+    .btn-12:hover span:nth-child(1) {
+        box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+        7px 7px 20px 0px rgba(0,0,0,.1),
+        4px 4px 5px 0px rgba(0,0,0,.1);
+        -webkit-transform: rotateX(0deg);
+        -moz-transform: rotateX(0deg);
+        transform: rotateX(0deg);
+    }
+    .btn-12:hover span:nth-child(2) {
+        box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+        7px 7px 20px 0px rgba(0,0,0,.1),
+        4px 4px 5px 0px rgba(0,0,0,.1);
+        color: transparent;
+        -webkit-transform: rotateX(-90deg);
+        -moz-transform: rotateX(-90deg);
+        transform: rotateX(-90deg);
+    }
+    .vid{
+        margin: 20px;
+    }
+
+    @media only screen and (max-width:840px){
+        .banner {
+            height: 300px;
+            width: 100%;
+            background-color: #5741d9;
+            background-repeat: no-repeat;
+            color: white;
+            display: flex;
+            /* justify-content: center; */
+            align-items: center;
+        }
+        .bannertext{
+            height: 150px;
+            width: 70%;
+            vertical-align: middle;
+            padding-right: 80px;
+            padding-left: 80px;
+            font: inherit;
+            font-size: 50%;
+            justify-content: center;
+        }
+        .banner2{
+            height: 350px;
+            width: 80%;
+            background-color: white;
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: black;
+            padding-bottom: 0px;
+            margin: 20px 20px;
+            font-size: 100%;
+            font: inherit;
+        }
+        .text2{
+            margin-top: 0%;
+            font-size: 20px;
+            margin-bottom: 0%;
+        }
+        .text3{
+            margin-top: 5px;
+            font-size: 15px;
+            line-height: 1.16;
+            text-align: left;
+        }
+        .para{
+            font-size: 10px;
+        }
+        .link{
+            text-decoration: none;
+            list-style: none;
+            margin: auto;
+            padding: 0px;
+            width: 100%;
+            margin-left: 20px;
+            /* display: inline-flex ; */
+        }
+        .lis{
+            width: 24.4%;
+            margin: 0px !important;
+            padding: 0px !important;
+            display: flex;
+            flex-direction: column;
+        }
+        #video1,#video2{
+            width: 400px !important;
+        }
+        .btn-non{
+            display: none;
+        }
+    }
+    @media only screen and (max-width:460px){
+        #video1,#video2{
+            width: 200px !important;
+        }
+        .bannertext{
+            width: 85%;
+        }
+        .banner2{
+            height: 450px;
+        }
+        .btn-12 span:nth-child(2) {
+            width: 80px;
+            height: 30px;
+            text-align: center;
+
+        }
+        .btn-non{
+            display: none;
+        }
+    }
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/front.css">    
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+      <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>CRYPTOXs</title>
+</head>
+<body>
+    <div class="container" style="width: 100%; background-color: #5741d9; max-width: 1800px;">
+        <div class="header" style="width: 100%; background-color: #5741d9; max-width: 1800px;">
+            <h2>CRYPTOXs</h2>
+            <input type="checkbox" id="chk" />
+            <label for="chk" class="show-btn">
+              <i class="fa fa-bars"></i>
+            </label>
+            <ul class="menu">
+                
+                <li><a href ="../index.html">Home</a></li>
+            <li><a href="./Prices.html" target="_blank">Prices</a></li>
+            <li><a href="./podcast.html">Podcast</a></li>
+            <li><a href="./about.html">About US</a></li>
+            <li><a href="./CryptoGuides.html">Crypto Guides</a></li>
+            <li><a href="./news.html">News</a></li>
+            <li><a href="./contactUs.html">Contact Us</a></li>
+               
+                    <label for="chk" class="hide-btn">
+                        <i class="fa fa-times"></i>
+                      </label>
+                    
+    
+            </ul>
+        </div>
+        </div>
+    <div class="banner">
+        <div class = bannertext>
+            <p class="text2">How to Grow a Decacorn</p>
+            <p class="text3">Find out what it's like to work at CryptoXs without having to do any work.</p>
+        </div>
+    </div>
+    <div class="banner2">
+            <h2 class="para"><span><strong>Podcast </strong>Overview</span></h2>
+            <p class="para">Experts suspect that 2019 may be the year of decacorn IPOs from companies like Lyft, Airbnb, Slack and SpaceX. How did they get there? What challenges did they face? What lessons did they learn? Find out by tuning in weekly to “How to Grow a Decacorn” which follows Kraken, one of the most popular bitcoin or crypto companies in the world - currently valued at $4,000,000,000. We're giving you an inside peek into how we're beating the odds to grow 10 horns and take our place among this exclusive pack of companies. Witness the madness now...</p>
+            <div style="display: inline-flex;">
+                <ul class="link">
+                    <li class="lis"><a href="https://podcasts.apple.com/us/podcast/how-to-grow-a-decacorn/id1450790442">iTunes</a></li>
+                    <li class="lis"><a href="/redirect?url=https%3A%2F%2Fopen.spotify.com%2Fshow%2F0wOXtyxh0xmXVVBvKV0AAg">Spotify</a></li>
+                    <li class="lis"><a href="/redirect?url=https%3A%2F%2Fplay.google.com%2Fmusic%2Flisten%23%2Fps%2FIhxf2alua6ylrundkgoz6qevttm">Podcasts</a></li>
+                   
+                </ul>
+            </div>
+    </div>
+    <div>
+        <div style="text-align:center; background-color: #0385e6; "> 
+            <button onclick="playPause()" class="butt btn-12"><span>Play/Pause</span><span>Play/Pause</span></button> 
+            <button onclick="makeBig()" class="butt btn-12 btn-non"><span>Big</span><span>Big</span></button>
+            <button onclick="makeSmall()" class="butt btn-12 btn-non"><span>Small</span><span>Small</span></button>
+            <button onclick="makeNormal()" class="butt btn-12 btn-non"><span>Normal</span><span>Normal</span></button>
+            
+            <br><br>
+            <video id="video1" width="800" class="vid">
+              <source src="./Meet India's CRYPTO Millionaire Sumit Gupta - EASY Explanation Of Blockchain _ The Ranveer Show 97.mp4" type="video/mp4">
+              Your browser does not support HTML video.
+            </video>
+          </div> 
+          
+          <script> 
+          var myVideo = document.getElementById("video1"); 
+          
+          function playPause() { 
+            if (myVideo.paused) 
+              myVideo.play(); 
+            else 
+              myVideo.pause(); 
+          } 
+          
+          function makeBig() { 
+              myVideo.width = 1200; 
+          } 
+          
+          function makeSmall() { 
+              myVideo.width = 400; 
+          } 
+          
+          function makeNormal() { 
+              myVideo.width = 800; 
+          } 
+          </script> 
+        </div>
+        <div style="text-align:center; background-color: whitesmoke;"> 
+            <button onclick="playPause1()" class="butt btn-12"><span>Play/Pause</span><span>Play/Pause</span></button> 
+            <button onclick="makeBig1()" class="butt btn-12 btn-non"><span>Big</span><span>Big</span></button>
+            <button onclick="makeSmall1()" class="butt btn-12 btn-non"><span>Small</span><span>Small</span></button>
+            <button onclick="makeNormal1()" class="butt btn-12 btn-non"><span>Normal</span><span>Normal</span></button>
+            
+            <br><br>
+          <video id="video2" width="800" class="vid">
+            <source src="./Explained _ The Stock Market _ FULL EPISODE _ Netflix.mp4" type="video/mp4">
+            Your browser does not support HTML video.
+          </video>
+        </div> 
+        
+        <script> 
+        var myVideo2 = document.getElementById("video2"); 
+        
+        function playPause1() { 
+          if (myVideo2.paused) 
+            myVideo2.play(); 
+          else 
+            myVideo2.pause(); 
+        } 
+        
+        function makeBig1() { 
+            myVideo2.width = 1200; 
+        } 
+        
+        function makeSmall1() { 
+            myVideo2.width = 400; 
+        } 
+        
+        function makeNormal1() { 
+            myVideo2.width = 800; 
+        } 
+        </script> 
+    </div>
+    <footer>
+        <div class="top-footer">
+            <div class="features">
+            <span class ="feat">Features</span>
+            <ul>
+               <li><a href="#">24/7 Support</a></li>
+               <li><a href="#">Account</a></li>
+               <li><a href="#">Futures</a></li>
+               <li><a href="#">Support</a></li> 
+            </ul>
+            </div>
+            <div class="features">
+            <span class="feat">Prices</span>
+            <ul>
+                <li><a href="#">Cryptowatch</a></li>
+                <li><a href="#">Prices Overview</a> </li>
+            </ul>
+            </div>
+            <div class="features">
+                <span class="feat">Learn</span>
+                <ul>
+                    <li><a href ="#">Blog</a></li>
+                    <li><a href="#">Crypto Guides</a> </li>
+                    <li><a href="#">Videos</a></li>
+                    <li><a href="#">Podcast</a></li>
+                </ul>
+            </div>
+            <div class="features">
+                <span class="feat">About</span>
+                <ul>
+                    <li><a href="#">Why CRYPTOXs?</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Contacts</a></li>
+                    <li><a href="#">Affilates</a></li>
+                </ul>
+            </div>
+            </div>
+        <hr> <br>
+        <div class="footer">
+            <div class="h2">
+                <h2>CRYPTOXs</h2>
+            </div>
+       
+        <div class="social">
+        <a href="http://www.linkedin.com"><i class="fa fa-linkedin"></i></a>
+        <a href="http://www.twitter.com"><i class="fa fa-twitter"></i></a>
+        <a href="http://www.facebook.com"><i class="fa fa-facebook"></i></a>
+        </div>
+      
+        <div class="policy">
+            <p style="color: rgb(234, 231, 248)">© 2021-2024 Payward, Inc</p>
+            <a href="#Policy_Notice"><u>Privacy Notice</u></a>
+        </div> 
+        <div class="cookies">
+            <a href="#Terms"><u>Terms of Services</u></a>
+        </div>
+    
+    </div>
+    </footer>
+</body>
+</html>
